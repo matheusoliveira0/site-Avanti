@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #e7e7ea;
+}
+
+.sub-menu {
+  width: 1261px;
+  padding: 20px;
+  height: 329px;
+  background-color: #fff;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sub-menu h2 {
+  position: relative;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 600px;
+}
+.categoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 63px;
+  height: 236px;
+  margin: 10px;
+}
+
+.categoria h3 {
+  color: rgb(0, 92, 255);
+  margin-bottom: 20px;
+}
+
+.categoria ul {
+  list-style: none;
+}
+
+.categoria ul li {
+  text-decoration: none;
+  color: #656565;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categoria ul li a {
+  text-decoration: none;
+  color: #656565;
+  margin: 0 auto;
+}
+
+.categoria ul li a:hover {
+  text-decoration: underline;
+}
+
+.produtos-novos {
+  width: 236px;
+  height: 298px;
+  padding-top: 20px;
+  position: relative;
+  bottom: 270px;
+  left: 1000px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url("assets/imgs/caneca2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.produtos-novos p {
+  margin: 20px 20px;
+  width: 126px;
+  height: 155px;
+  top: 101px;
+  left: 1027px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.5%;
+  margin-bottom: 500px;
+}
+
+.produtos-novos strong {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+.produtos-novos button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.produtos-novos button {
+  position: absolute;
+  width: 116px;
+  height: 38px;
+  margin-top: 6px;
+  top: 230px;
+  left: 21px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background 0.3s ease;
+}
+.produtos-novos button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffffff40;
+  opacity: 1;
+}
