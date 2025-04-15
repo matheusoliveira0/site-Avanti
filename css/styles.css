@@ -901,25 +901,33 @@ span {
   height: 12px;
 }
 /* responsividade --------------------------------------------------------------------- */
-
 @media (max-width: 768px) {
+  html,
   body {
     overflow-x: hidden;
   }
+
   .anuncio-cupom p {
     height: 52px;
     width: 100%;
+    max-width: 390px;
     text-align: center;
     padding-top: 8px;
+    margin: 0 auto;
   }
+
   header {
     box-shadow: none;
   }
+
   .header-content {
     height: 132px;
     width: 100%;
+    max-width: 390px;
     flex-direction: column;
+    margin: 0 auto;
   }
+
   .logo {
     width: 148px;
     height: 26px;
@@ -927,19 +935,22 @@ span {
   }
 
   #barra-pesquisa {
-    width: 361px;
+    width: 100%;
+    max-width: 361px;
     height: 40px;
     margin: 0 auto;
+    position: relative;
     top: 1px;
-    left: 1px;
+    left: 0;
   }
+
   #btn-login {
     display: none;
   }
+
   #btn-cart {
     width: 25px;
     height: 24px;
-    margin: 0 auto;
     position: absolute;
     top: 63px;
     right: 19px;
@@ -947,7 +958,6 @@ span {
 
   .menu-mobile {
     display: inline-block;
-    margin: 0 auto;
     position: absolute;
     top: 63px;
   }
@@ -975,69 +985,78 @@ span {
 
   .desconto {
     margin-top: 10px;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     height: 306px;
     position: relative;
-    /* background-color: red; */
   }
+
   #img-chair {
     width: 369px;
     height: 307px;
-    mix-blend-mode: Darken;
+    mix-blend-mode: darken;
     position: absolute;
-    top: 0px;
-    left: -163px;
+    left: 50%;
+    transform: translateX(-85%);
+    top: 0;
   }
+
   #img-super-sale {
     display: none;
   }
+
   #img-super-sale2 {
     display: block;
     width: 139px;
     height: 164px;
     position: absolute;
     top: 67px;
-    left: 192px;
+    left: 56%;
   }
 
   .anuncio-lancamentos {
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     height: 22px;
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
-  .carrossel-produtos {
-    /* ---------------------------------------------------------  */
-  }
+
   .lancamentos {
     display: none;
   }
+
   .sessao-caneca {
     width: 100%;
+    max-width: 390px;
     height: 800px;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
-  .pontos-caneca-conteudo {
-    /* gap: 0; */
-  }
+
   .imagem-caneca {
-    width: 391px;
+    width: 100%;
+    max-width: 390px;
     height: 390px;
   }
+
   .imagem-caneca img {
-    position: as;
+    position: relative;
     width: 335px;
     height: 340px;
     top: 7px;
-    left: 36px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
   .texto-caneca {
     margin-top: 10px;
     font-size: 14px;
     position: relative;
-    width: 343px;
-    top: 20px;
-    left: 6px;
+    top: 0;
+    left: 4px;
+    width: 100%;
+    max-width: 343px;
+    margin: 20px auto 0;
     gap: 7px;
     letter-spacing: 4%;
     font-weight: 100;
@@ -1046,105 +1065,138 @@ span {
   .texto-caneca p {
     margin-top: 10px;
     font-size: 14px;
-    position: relative;
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     gap: 7px;
     letter-spacing: 4%;
     font-weight: 100;
   }
-
+  .texto-caneca h2 {
+    font-size: 20px;
+  }
   .sessao-pontos-caneca {
     width: 100%;
+    max-width: 390px;
     height: 717px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
+
   .pontos-caneca-conteudo {
     width: 100%;
+    max-width: 390px;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;
+    margin: 0 auto;
   }
+
   .imagem-caneca2 {
     width: 349px;
     height: 349px;
-    margin: 0 auto;
     position: relative;
-    top: -56px;
-    /*left: 13px; */
+    top: -58px;
+    left: 1%;
   }
 
   .imagem-caneca2 img {
-    width: 100%;
+    width: 340px;
     height: 100%;
   }
+
   .topicos-caneca {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 242px;
-    margin: 0 auto;
-    margin-bottom: 1px;
+    margin: 0 auto 1px;
     gap: 12px;
     position: relative;
     top: -91px;
-    left: 1px;
   }
+
   .topico-caneca {
     gap: 12px;
   }
+
   .topicos-caneca h2 {
     font-size: 20px;
-    line-height: 140%;
-    letter-spacing: 4%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #4f4f4f;
+    color: #000;
   }
+
   .topico-caneca p {
-    width: 276px;
+    width: 100%;
+    max-width: 276px;
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
   }
+
   .topico-caneca img {
     width: 60px;
     height: 60px;
-    top: 2314px;
-    left: 19px;
   }
+
   .chamada-contato {
     width: 100%;
+    max-width: 390px;
     height: 449px;
     background-image: url("../assets/imgs/avanti.png");
     background-size: 157% 86%;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 60px;
   }
+
   .chamada-contato p {
     width: 100%;
+    max-width: 390px;
     height: 75px;
     font-size: 16px;
-    font-weight: 600;
+    margin: 0 auto;
   }
+
   .cadastro-news {
     width: 100%;
+    max-width: 390px;
+    height: 400px;
     position: relative;
     top: -63px;
+    margin: auto;
+    justify-content: center;
   }
-  .cadastro-news p {
+
+  .cadastro-news p,
+  .cadastro-news a {
     font-size: 16px;
   }
+
   #form-cadastro {
-    margin: 10px auto;
-    width: 358px;
-    height: 284px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 358px;
+    height: 314px;
     flex-direction: column;
     align-items: center;
   }
+
   .caixa-form {
     margin-top: 10px;
   }
+  .btn-polica-privacidade a {
+    font-size: 12px;
+  }
+  .btn-form-news {
+    width: 326px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-right: 24px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+  }
 
   footer {
-    display: none;
+  }
+  .info-avanti {
   }
 }
