@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 
 </head>
 
@@ -672,7 +672,9 @@
         </main>
         <footer>
             <section class="info-avanti">
+
                 <div class="conteudo-info-avanti">
+
                     <div class="contatos-avanti">
                         <img class="logo" src="assets/imgs/logo.png" alt="logo">
                         <div class="redes-sociais">
@@ -683,41 +685,97 @@
                         </div>
                     </div>
                     <div class="sobre-avanti">
-                        <h4>Institucional</h4>
-                        <h5>Sobre Nós</h5>
-                        <h5>Nossas Lojas</h5>
-                        <h5>Privacidade e Segurança</h5>
-                        <h5>Termos e Condiçoes</h5>
-                    </div>
-                    <div class="sobre-avanti">
-                        <h4>Central de Ajuda</h4>
-                        <h5>Fale Conosco</h5>
-                        <h5>Frete e Entregas</h5>
-                        <h5>Troca e Devoluções</h5>
-                        <h5>Formas de Pagamento</h5>
-                        <h5>FAQ</h5>
-                    </div>
-                    <div class="sobre-avanti">
-                        <h4>Atendimento</h4>
-                        <h4 class="contato">Telefone: <span>(00)1234-5678</span></h4>
-                        <h4 class="contato">Email: <span>exemplo@exemplo.com.br</span></h4>
-                        <h4 class="contato">Horario de Atendimento: </h4>
-                        <span>Segunda a Sábado: 07:00 ás 23:00</span>
-                        <span>Domingo e Feriados: 7:00 ás 21:00</span>
-                    </div>
-                </div>
-                <div class="formas-pagamento">
-                    <img src="assets/icones/formaspagamento.png" alt="">
+                        <button class="accordion-header">
+                            <h4>Institucional</h4>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </button>
+
+                        <div class="accordion-body">
+                            <p>Sobre Nós</p>
+                            <p>Nossas Lojas</p>
+                            <p>Privacidade e Segurança</p>
+                            <p>Termos e Condiçoes</p>
+                        </div>
+                        <!-- <div class="accordion-header">
+                            <h4>Institucional</h4>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Sobre Nós</p>
+                            <p>Nossas Lojas</p>
+                            <p>Privacidade e Segurança</p>
+                            <p>Termos e Condiçoes</p>
+                        </div>
+                    </div> -->
+                        <div class="sobre-avanti">
+                            <button class="accordion-header">
+                                <div class="accordion-header">
+                                    <h4>Central de Ajuda</h4>
+                                </div>
+                                <i class="fa-solid fa-chevron-down arrow"></i>
+                            </button>
+
+                            <div class="accordion-body">
+                                <p>Fale Conosco</p>
+                                <p>Frete e Entregas</p>
+                                <p>Troca e Devoluções</p>
+                                <p>Formas de Pagamento</p>
+                                <p>FAQ</p>
+                            </div>
+                            <!-- <div class="accordion-header">
+                               <h4>Central de Ajuda</h4> 
+                            </div>
+                            <div class="accordion-body">
+                            <p>Fale Conosco</p>
+                            <p>Frete e Entregas</p>
+                            <p>Troca e Devoluções</p>
+                            <p>Formas de Pagamento</p>
+                            <p>FAQ</p>
+                        </div> -->
+                        </div>
+                        <div class="sobre-avanti">
+                            <button class="accordion-header">
+                                <h4>Atendimento</h4>
+                                <i class="fa-solid fa-chevron-down arrow"></i>
+                            </button>
+
+                            <div class="accordion-body">
+                                <p class="contato">Telefone: <span>(00)1234-5678</span></p>
+                                <p class="contato">Email: <span>exemplo@exemplo.com.br</span></p>
+                                <p class="contato">Horario de Atendimento: </p>
+                                <span>Segunda a Sábado: 07:00 ás 23:00</span>
+                                <span>Domingo e Feriados: 7:00 ás 21:00</span>
+                            </div>
+                            <!-- <div class="accordion-header">
+                            <h4>Atendimento</h4>
+                        </div>
+                        <div class="accordion-body">
+                            <p class="contato">Telefone: <span>(00)1234-5678</span></p>
+                            <p class="contato">Email: <span>exemplo@exemplo.com.br</span></p>
+                            <p class="contato">Horario de Atendimento: </p>
+                            <span>Segunda a Sábado: 07:00 ás 23:00</span>
+                            <span>Domingo e Feriados: 7:00 ás 21:00</span>
+                        </div> -->
+                        </div>
+                        <div class="formas-pagamento">
+                            <img src="assets/icones/formaspagamento.png" alt="">
+                        </div>
+
             </section>
             <section class="conteudo-final">
-                <p class="texto-rodape">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-                    autem
-                    vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                    luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+                <div class="texto-rodape">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis
+                        autem
+                        vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+                        eu
+                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum
+                        zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
                 <div class="grupos-de-empresas">
                     <div class="grupo-um-empresa">
                         <img src="assets/imgs/encript.png" alt="">
@@ -731,6 +789,7 @@
             </section>
         </footer>
     </div>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>

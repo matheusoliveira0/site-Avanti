@@ -419,7 +419,6 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   width: 41px;
   height: 23px;
   border-radius: 4px;
@@ -646,8 +645,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/imgs/avanti.png");
-  /* top: 4348px; */
+  background-image: url("../../assets/imgs/avanti.png");
 }
 
 .chamada-contato img {
@@ -814,8 +812,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.sobre-avanti {
-  /* border: 1px solid red; */
+
+.accordion-body {
   width: 245px;
   height: 156px;
   letter-spacing: 1px;
@@ -824,19 +822,25 @@ header {
   gap: 20px;
 }
 
-.info-avanti .sobre-avanti h4 {
+.accordion-header {
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
+  margin-bottom: 30px;
 }
 
-.sobre-avanti h5,
-p,
+.accordion-body p,
 span {
   font-weight: 100;
   font-size: 12px;
   line-height: 100%;
   color: #303030;
+}
+
+.accordion-body .contato {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
 }
 
 .formas-pagamento {
@@ -862,7 +866,7 @@ span {
   flex-direction: column;
 }
 
-.texto-rodape {
+.texto-rodape p {
   width: 1074px;
   height: 59px;
   margin: auto;
@@ -1139,11 +1143,10 @@ span {
     width: 100%;
     max-width: 390px;
     height: 449px;
-    background-image: url("../assets/imgs/avanti.png");
+    background-image: url("../../assets/imgs/avanti.png");
     background-size: 157% 86%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 60px;
   }
 
   .chamada-contato p {
@@ -1159,7 +1162,6 @@ span {
     max-width: 390px;
     height: 400px;
     position: relative;
-    top: -63px;
     margin: auto;
     justify-content: center;
   }
@@ -1198,5 +1200,93 @@ span {
   footer {
   }
   .info-avanti {
+    width: 100%;
+    height: auto;
+    max-width: 390px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .conteudo-info-avanti {
+    width: 100%;
+    max-width: 390px;
+    margin: auto;
+    height: auto;
+    gap: 0;
+  }
+
+  .contatos-avanti {
+    position: relative;
+    left: 90px;
+    /* display: none; */
+  }
+
+  .sobre-avanti {
+  }
+  .accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .accordion-body {
+    color: #444;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+  }
+
+  .arrow {
+    transition: transform 0.2s linear;
+  }
+
+  .accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+  }
+
+  .conteudo-final {
+    width: 100%;
+    max-width: 390px;
+    height: 300px;
+    position: relative;
+    top: 1px;
+  }
+  .texto-rodape {
+    width: 100%;
+    max-width: 390px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 1px;
+  }
+  .texto-rodape p {
+    width: 95%;
+    font-size: 12px;
+    height: auto;
+  }
+  .grupos-de-empresas {
+    margin: 20px;
+    position: relative;
+    top: 0px;
+    left: 1px;
   }
 }
