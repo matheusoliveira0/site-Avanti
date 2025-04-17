@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avanti</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linkin swiper js css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- link icones-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+
     <link rel="stylesheet" href="src/css/styles.css">
 
 </head>
@@ -82,8 +82,7 @@
 
                     </label> -->
                 </div>
-                <div id="search-result">
-                </div>
+                <p id="search-result"> </p>
 
             </div>
             <nav>
@@ -464,87 +463,130 @@
                 <h2>Lançamentos</h2>
                 <a href="#">Ver mais</a>
             </div>
-            <section class="latest-releases-slider first-instance">
-                <span class="arrow-left"></span>
-
-                <div class="slide1">
-
-                    <div class="product-card">
-                        <span class="tag-new">Novo</span>
-                        <img src="assets/imgs/produto.png" alt="imagem-produto">
-                        <div class="product-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="prices">
-                            <span class="old-price">R$100</span>
-                            <span class="actual-price">R$79,90</span>
-                            <span class="tag-descount">10% off</span>
-                            <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
-                        </div>
-                        <button id="btn-buy">Comprar</button>
-                    </div>
-
-                    <div class="product-card">
-                        <span class="tag-new">Novo</span>
-                        <img src="assets/imgs/produto.png" alt="imagem-produto">
-                        <div class="product-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="prices">
-                            <span class="old-price">R$100</span>
-                            <span class="actual-price">R$79,90</span>
-                            <span class="tag-descount">10% off</span>
-                            <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
-                        </div>
-                        <button id="btn-buy">Comprar</button>
-                    </div>
-
-                    <div class="product-card">
-                        <span class="tag-new">Novo</span>
-                        <img src="assets/imgs/produto.png" alt="imagem-produto">
-                        <div class="product-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="prices">
-                            <span class="old-price">R$100</span>
-                            <span class="actual-price">R$79,90</span>
-                            <span class="tag-descount">10% off</span>
-                            <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
-                        </div>
-                        <button id="btn-buy">Comprar</button>
-                    </div>
-
-                    <div class="product-card">
-                        <span class="tag-new">Novo</span>
-                        <img src="assets/imgs/produto.png" alt="imagem-produto">
-                        <div class="product-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="prices">
-                            <span class="old-price">R$100</span>
-                            <span class="actual-price">R$79,90</span>
-                            <span class="tag-descount">10% off</span>
-                            <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
-                        </div>
-                        <button id="btn-buy">Comprar</button>
-                    </div>
-
-                    <div class="product-card">
-                        <span class="tag-new">Novo</span>
-                        <img src="assets/imgs/produto.png" alt="imagem-produto">
-                        <div class="product-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="prices">
-                            <span class="old-price">R$100</span>
-                            <span class="actual-price">R$79,90</span>
-                            <span class="tag-descount">10% off</span>
-                            <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
-                        </div>
-                        <button id="btn-buy">Comprar</button>
-                    </div>
+            <section class="latest-releases-slider first-instance swiper"> <!--div container -->
 
 
+                <div class="slide1 "> <!--div wrapper -->
+                    <button class="arrow-left">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M398.08-235.85 151.92-482l246.16-246.15 60.15 62.38L317.46-525h490.62v86H317.46l140.77 140.77-60.15 62.38Z" />
+                        </svg>
+                    </button>
+                    <ul class="list-products swiper-wrapper">
+
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+                        <li class="list-product-item swiper-slide">
+                            <div class="product-card"> <!--card-link -->
+                                <span class="tag-new">Novo</span>
+                                <img src="assets/imgs/produto.png" alt="imagem-produto">
+                                <div class="product-description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="prices">
+                                    <span class="old-price">R$100</span>
+                                    <span class="actual-price">R$79,90</span>
+                                    <span class="tag-descount">10% off</span>
+                                    <p class="installment-options">Ou em até <em>10x de R$ 7,90</em></p>
+                                </div>
+                                <button id="btn-buy">Comprar</button>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="swiper-pagination"></div>
+
+                    <button class="arrow-right">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="m565.85-235.85-60.16-62.38L646.46-439H148v-86h498.46L505.69-665.77l60.16-62.38L812-482 565.85-235.85Z" />
+                        </svg>
+
+                    </button>
                 </div>
 
             </section>
@@ -934,6 +976,9 @@
             </section>
         </footer>
     </div>
+    <!-- linking swiper js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script da pagina -->
     <script src="src/js/script.js"></script>
 </body>
 
