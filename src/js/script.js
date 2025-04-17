@@ -1,3 +1,21 @@
+// codigo do formulario
+
+const form = document.getElementById("signup-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
+// codigo dos accordions
+
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", (e) => {
+    const body = accordion.querySelector(".accordion-body");
+    body.classList.toggle("active");
+  });
+});
+
 // codigo da barra de pesquisa
 
 const searchInput = document.getElementById("input-search");
@@ -37,8 +55,8 @@ new Swiper(".slide1", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".arrow-left",
-    prevEl: ".arrow-right",
+    nextEl: ".arrow-right", // → vai pra frente
+    prevEl: ".arrow-left", // ← volta
   },
 
   // Responsive breakpoints
@@ -46,22 +64,11 @@ new Swiper(".slide1", {
     0: {
       slidesPerView: 2,
     },
-    640: {
+    375: {
       slidesPerView: 2,
     },
     1024: {
       slidesPerView: 5,
     },
   },
-});
-
-// codigo dos accordions
-
-const accordions = document.querySelectorAll(".accordion");
-
-accordions.forEach((accordion) => {
-  accordion.addEventListener("click", () => {
-    const body = accordion.querySelector(".accordion-body");
-    body.classList.toggle("active");
-  });
 });
