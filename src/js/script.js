@@ -44,7 +44,7 @@ searchInput.addEventListener("keypress", (e) => {
 
 new Swiper(".slide1", {
   loop: true,
-  // spaceBetween:10,
+  spaceBetween: 21,
 
   // Pagination bullets
   pagination: {
@@ -61,14 +61,45 @@ new Swiper(".slide1", {
 
   // Responsive breakpoints
   breakpoints: {
-    0: {
+    320: {
       slidesPerView: 2,
+      spaceBetween: 185,
+    },
+    344: {
+      slidesPerView: 2,
+      spaceBetween: 160,
     },
     375: {
       slidesPerView: 2,
+      spaceBetween: 130,
+    },
+    414: {
+      slidesPerView: 2,
+      spaceBetween: 100,
+    },
+    430: {
+      slidesPerView: 2,
+      spaceBetween: 90,
+    },
+    500: {
+      slidesPerView: 2.5,
+      spaceBetween: 120,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 130,
+    },
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 200,
+    },
+    930: {
+      slidesPerView: 4.5,
+      spaceBetween: 200,
     },
     1024: {
       slidesPerView: 5,
+      spaceBetween: 230,
     },
   },
 });

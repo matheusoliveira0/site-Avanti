@@ -14,7 +14,7 @@ body {
 
 header {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 181px;
   max-height: auto;
@@ -24,7 +24,7 @@ header {
 
 .anuncio-cupom {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: auto;
   text-align: center;
@@ -53,7 +53,7 @@ mark {
 
 .header-content {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   position: absolute;
   display: flex;
@@ -203,7 +203,7 @@ mark {
 .super-sale-section {
   background-color: #e7e7ea;
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 306px;
   overflow: hidden;
@@ -238,7 +238,7 @@ mark {
 /* Seção de lançamentos  */
 
 .latest-releases-announcement {
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 22px;
   margin: 40px 10px;
@@ -330,7 +330,7 @@ mark {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0 33px;
+  /* margin: 0 -33px; */
 }
 
 .slide1 .swiper-pagination-bullet {
@@ -460,7 +460,7 @@ mark {
 
 .mugs-section {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 750px;
   flex-direction: column;
@@ -470,7 +470,7 @@ mark {
 .mug-img {
   background-color: #c2c2c2;
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 390px;
 }
@@ -522,7 +522,7 @@ mark {
 .mug-benefits-section {
   background-color: #dedede;
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   margin: 0 auto 40px;
   display: flex;
@@ -588,7 +588,7 @@ mark {
 
 .contact-message {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 449px;
   background-image: url("../../assets/imgs/avanti.png");
@@ -603,7 +603,7 @@ mark {
 .contact-message p {
   background-color: #005cff;
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: 75px;
   padding: 0 37px;
@@ -617,7 +617,7 @@ mark {
 }
 .newsletter-signup {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: auto;
   margin: auto;
@@ -704,7 +704,7 @@ mark {
 
 .avanti-informations {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: auto;
   background-color: #f5f5f5;
@@ -714,7 +714,7 @@ mark {
 }
 .avanti-info-content {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   margin: 0 auto;
   height: auto;
@@ -828,7 +828,7 @@ mark {
 
 .final-content {
   width: 100%;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* max-width: 640px; */
   height: auto;
   margin-top: 20px;
@@ -876,6 +876,18 @@ mark {
   width: 50px;
   height: 12px;
 }
+
+/* -------------------------------Responsividade----------------------
+
+@media screen and (min-width: 768px) { /* Tablets médios e paisagem - a partir de 768px
+
+}
+
+@media screen and (min-width: 1024px) { Desktops grandes - a partir de 1200px
+
+}
+
+ */
 /* Media queries ------------------------------------ */
 
 /* Estilos para tablets 
